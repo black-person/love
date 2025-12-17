@@ -20,9 +20,15 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 // NO BERHASIL DIPENCET → POPUP
+// popup TIDAK nyala di awal
+reallyPopup.style.display = "none";
+
+// klik NO → popup muncul
 noBtn.addEventListener("click", () => {
   reallyPopup.style.display = "flex";
 });
+
+// tutup popup
 closePopup.addEventListener("click", () => {
   reallyPopup.style.display = "none";
 });
@@ -40,3 +46,4 @@ yesBtn.addEventListener("click", () => {
     gifResult.play();
   }, 3000);
 });
+
